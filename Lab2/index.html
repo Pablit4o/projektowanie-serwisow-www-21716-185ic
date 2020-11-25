@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles\style.css">
+</head>
+<body>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <nav class="navbar navbar-expand-sm bg-primary justify-content-center">
+    <div class="justify-content-center">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item form">
+          <a class="nav-link active" href="#">Formularz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="galeria.html">Galeria</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container py-3 formularz">
+    <form>
+      <div class="form-group">
+        <label>Ciąg Fibonacciego</label>
+        <input id="liczba" type="text" class="form-control" placeholder="Wprowadź liczbę">
+        <label id="wynik"></label>
+      </div>
+      <button type="button" class="btn btn-primary" onClick="Fib()">Submit</button>
+    </form>
+  </div>
+<script type="text/javascript">
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut(4000);
+    });
+
+    var g = document.getElementsByTagName("A");
+    for (var i = 0; i < g.length; i++){
+        (function(index){
+            g[i].onmouseover = function(){
+              g[index].style.backgroundColor="#4da3ff"
+            }
+            g[i].onmouseout = function(){
+              g[index].style.backgroundColor="#007bff"
+            }
+        })(i);
+    }
+
+    $(document).ready(function(){
+      $(".formularz").hide()
+      var stan = true;
+      $(".form").click(function(){
+        if(stan){
+          $(".formularz").slideDown();
+          stan = false;
+        }else{
+          $(".formularz").slideUp();
+          stan = true;
+        }
+      });
+    });
+
+    function Fib(){
+      var x = document.getElementById("liczba").value
+      var fib1 = 1;
+      var fib2 = 1;
+       for(var i = 0; i<x ; i++){
+         fib1 = fib2 - fib1;
+         fib2 = fib1 + fib2;
+       }
+       document.getElementById("wynik").innerHTML = `${x} liczba ciągu Fibonacciego to: ${fib1}`
+    }
+</script>
+</body>
+</html>
