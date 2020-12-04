@@ -1,0 +1,18 @@
+{
+    "użytkownik":{
+        "imie": "Jan Kowalski",
+        "nazwaUżytkownika": "Janusz",
+        "email": "Janusz@biznesu.org",
+        "adres": {
+            "miasto": "Sosnowiec",
+            "ulica": "Polna",
+            "numer": "16"
+        }
+    },
+    "liczba":{
+        "całkowita":[1,2,5,4],
+        "ułamek":{
+            "mieszany":[2.2,4.4,5.2,8.2]
+        }
+    }
+}
