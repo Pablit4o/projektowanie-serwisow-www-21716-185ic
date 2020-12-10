@@ -9,7 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ListItemText from '@material-ui/core/ListItemText';
 
-class Welcome extends React.Component {
+export default class ProfileCard extends React.Component {
   constructor(){
     super()
 
@@ -47,5 +47,3 @@ class Welcome extends React.Component {
     );
   }
 }
-
-export default Welcome
