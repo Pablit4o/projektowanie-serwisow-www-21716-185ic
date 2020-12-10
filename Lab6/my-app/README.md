@@ -1,5 +1,15 @@
 # Projektowanie serwisow www 21716 Lab6
 
+### tworzenie aplikacji za pomocą modułu ‘create-react-app’
+
+![](screenshot/obraz0.png)
+
+### instalacja 'react-bootstrap'
+
+![](screenshot/obraz01.png)
+
+<hr/>
+
 ### Komponent funkcyjny, użycie funkcja map(), props oraz atrybutu key 
 #### komponent nadrzędny 'ul' i komponenty potomne 'li'
 ![](screenshot/obraz1.png)
