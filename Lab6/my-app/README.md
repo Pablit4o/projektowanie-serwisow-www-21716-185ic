@@ -1,4 +1,4 @@
-# Projektowanie serwisow www 21716 Lab6
+# Projektowanie serwisow WWW Lab6
 
 ### tworzenie aplikacji za pomocą modułu ‘create-react-app’
 
