@@ -1,6 +1,7 @@
 # Projektowanie serwisow www 21716 Lab6
 
 ### Komponent funkcyjny, użycie funkcja map(), props oraz atrybutu key 
+#### komponent nadrzędny 'ul' i komponenty potomne 'li'
 ![](screenshot/obraz1.png)
 
 <hr/>
@@ -29,6 +30,7 @@
 
 <hr/>
 
-### Wygląd strony, po kliknięciu serduszka liczba zwiększa się o jeden
+### Wygląd strony
+#### Po kliknięciu serduszka licznik zwiększa się o jeden
 
 ![](screenshot/obraz3.png)
