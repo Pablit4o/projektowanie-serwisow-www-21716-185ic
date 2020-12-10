@@ -31,6 +31,6 @@
 <hr/>
 
 ### Wygląd strony
-#### Po kliknięciu serduszka licznik zwiększa się o jeden
+#### Po kliknięciu :heart: licznik zwiększa się o jeden
 
 ![](screenshot/obraz3.png)
