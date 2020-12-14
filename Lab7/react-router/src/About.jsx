@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
@@ -10,41 +11,33 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ListItemText from '@material-ui/core/ListItemText';
 import picture from './img/kot_pilot.png'
 
-export default class ProfileCard extends React.Component {
-  constructor(){
-    super()
+const useStyles = makeStyles({
+  card: {
+    maxWidth: 275,
+  },
+});
 
-    this.state = {
-      likes: 0
-    }
-  }
+export default function ProfileCard(){
+  const [likes, setLikes] = useState(0);
+  const classes = useStyles();
 
-  changeLikes(){
-    this.setState({
-      likes: this.state.likes + 1
-    })
-  }
-  render() {
-    return (
-        <Card>
-          <CardActionArea>
-              <CardMedia
-              component="img"
-              image={ picture}
-              />
-              <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                  Kot Pilot
-              </Typography>
-              </CardContent>
-              <CardActions disableSpacing>
-                <IconButton aria-label="add to favorites" onClick={()=>this.changeLikes()}>
-                  <FavoriteIcon />
-                  <ListItemText primary={this.state.likes} />
-                </IconButton>
-              </CardActions>
-          </CardActionArea>
-        </Card>
-    );
-  }
+  return (
+    <Card className={classes.card}>
+      <CardActionArea>
+          <CardMedia component="img" image={ picture} />
+          <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+              Kot Pilot
+          </Typography>
+          </CardContent>
+          <CardActions disableSpacing>
+            <IconButton aria-label="add to favorites" onClick={()=>setLikes(likes + 1)}>
+              <FavoriteIcon />
+              <ListItemText primary={likes} />
+            </IconButton>
+          </CardActions>
+      </CardActionArea>
+    </Card>
+  );
+
 }

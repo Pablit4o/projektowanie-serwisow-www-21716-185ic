@@ -1,18 +1,21 @@
-import './App.css';
 import Nav from './Nav';
+import Lists from './Lists';
 import ProfileCard from './About';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-function App() {
+export default function App() {
+
   return (
-    <Router>
-      <div className="App">
-        <Nav />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={ProfileCard} />
-        </Switch>
-      </div>
+    <Router> 
+        <Nav>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={ProfileCard} />
+            <Route path="/list">
+              <Lists name="Lista" id={0} />
+            </Route>
+          </Switch>
+        </Nav>
     </Router>
   );
 }
@@ -23,4 +26,3 @@ const Home = () => (
   </div>
 )
 
-export default App;
