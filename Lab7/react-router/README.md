@@ -2,7 +2,7 @@
 
 ### tworzenie aplikacji za pomocą modułu ‘create-react-app’
 
-### instalacja `yarn add @material-ui/core @material-ui/icons @material-ui/lab @material-ui/styles react-router-dom react  react-redux`
+### instalacja `yarn add @material-ui/core @material-ui/icons @material-ui/lab @material-ui/styles react-dom react-router-dom react react-redux`
 
 <hr>
 
