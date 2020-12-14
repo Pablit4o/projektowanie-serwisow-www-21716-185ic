@@ -8,22 +8,26 @@
 
 <hr>
 
-### Strona startowa wyświetla powitanie
+### Kliknięcie Home na pasku nawigacyjnym przenosi na stronę główną
+### Gdzie wyświetolne zostaję powitanie
 
 ![](screenshots/obraz1.png)
 
 <hr>
 
-### Strona about wyświetla kartę z kotem pilotem
+### Kliknięcie About na pasku nawigacyjnym przenosi na podstronę 
+### Gdzie wyświetlona zostaję karta z kotem pilotem
 
 ![](screenshots/obraz2.png)
 
 <hr>
 
-### Strona list wyświetla liste produktów z krótkim opisem
+### Kliknięcie List na pasku nawigacyjnym przenosi na podstronę 
+### Gdzie wyświetlona zostaję lista produktów z krótkim opisem
+
 
 ![](screenshots/obraz3.png)
 
-### Przycisk po prawej stronie na pasku nawigacyjnym umożliwia zmiany stybu z jasnego na ciemny, i na odrót
+### Przycisk po prawej stronie na pasku nawigacyjnym umożliwia zmiany trybu z jasnego na ciemny, i na odrót
 
 ![](screenshots/obraz4.png)
